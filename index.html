@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scratch Paper</title>
+</head>
+	<style>
+body{
+		background-image: url(paper.jpeg);
+	}
+button{
+		background-color: dimgray;
+		height: 100px;
+		width: 100px;
+		margin-left: 150px;
+	}
+</style>
+	<body>
+		<form>
+			Enter 1st Number: <input type="text" id="number1">
+			Enter 2nd Number: <input type="text" id="number2"><br>
+			<button type="Submit" onclick="plus()">ADD</button>
+			<button type="Submit" onclick="minus()">SUBTRACT</button>
+			<br>
+			<button type="Submit" onclick="multi()">MULTIPLY</button>
+			<button type="Submit"  onclick="div()">DIVIDE</button>
+		</form>
+
+		<script>
+			function plus(){
+			var number1 = document. getElementById("number1").value; 
+			var number2 = document. getElementById("number2").value; 
+				var sum = Number(number1) + Number(number2)
+			window.alert("The sum is:"+ sum)
+			}
+				function minus(){
+			var number1 = document. getElementById("number1").value; 
+			var number2 = document. getElementById("number2").value; 
+				var diff = Number(number1) - Number(number2)
+			window.alert("The difference is:"+ diff)
+			}
+			function multi(){
+			var number1 = document. getElementById("number1").value; 
+			var number2 = document. getElementById("number2").value; 
+				var prod = Number(number1) * Number(number2)
+			window.alert("The product is:"+ prod)
+			}
+				function div(){
+			var number1 = document. getElementById("number1").value; 
+			var number2 = document. getElementById("number2").value; 
+				var div = Number(number1) / Number(number2)
+			window.alert("The quotient is:"+ div)
+			}
+			</script>
+	</body>
